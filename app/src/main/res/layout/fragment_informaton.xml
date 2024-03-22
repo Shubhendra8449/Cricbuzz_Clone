@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:backgroundTint="#ECEFF1"
+    android:layout_height="match_parent"
+    tools:context=".ui.">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="#EAF0F1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailsActivity">
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/cir_img"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="40dp"
+            android:src="@color/black"
+            android:scaleType="fitXY"
+            app:shapeAppearanceOverlay="@style/round"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Liam Livingstone"
+            android:textSize="17dp"
+
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cir_img"
+            />
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Country"
+
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            />
+        <TextView
+            android:id="@+id/tv_personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="PERSONAL INFORMATION"
+
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/tv_country"
+            />
+        <TextView
+            android:id="@+id/tv_born"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:text="Born"
+
+            android:paddingStart="16dp"
+            android:padding="10dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/tv_personal"
+            />
+        <TextView
+            android:id="@+id/tv_role"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="3.5dp"
+            android:paddingStart="16dp"
+            android:padding="10dp"
+            android:text="Role"
+
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/tv_born"
+            />
+
+        <TextView
+            android:id="@+id/tv_team"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="3.5dp"
+            android:paddingStart="16dp"
+            android:padding="10dp"
+            android:text="Team"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/tv_role"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="date"
+            android:id="@+id/et_born"
+
+            android:layout_marginLeft="150dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@id/tv_born"
+            app:layout_constraintTop_toTopOf="@id/tv_born"
+            app:layout_constraintBottom_toBottomOf="@id/tv_born"
+            />
+        <TextView
+            android:id="@+id/et_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batsman"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="2dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="@id/tv_role"
+            app:layout_constraintBottom_toBottomOf="@id/tv_role"
+            app:layout_constraintStart_toStartOf="@id/tv_role"
+
+            />
+
+        <TextView
+            android:id="@+id/et_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="India"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="2dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="@id/tv_team"
+            app:layout_constraintBottom_toBottomOf="@id/tv_team"
+            app:layout_constraintStart_toStartOf="@id/tv_team"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+

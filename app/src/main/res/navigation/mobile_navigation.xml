@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.codelab_5_shubhendra.ui.home.HomeFragment"
+        android:label="Cricket Players"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_addDetailsFragment"
+            app:destination="@id/addDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.codelab_5_shubhendra.ui.batsman.BatsmanFragment"
+        android:label="Batsman"
+        tools:layout="@layout/fragment_batsman" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.codelab_5_shubhendra.ui.bowler.BowlerFragment"
+        android:label="Bowler"
+        tools:layout="@layout/fragment_bowler" />
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.example.codelab_5_shubhendra.ui.favourite.FavouriteFragment"
+        android:label="Favourite"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/addDetailsFragment"
+        android:name="com.example.codelab_5_shubhendra.ui.addDetailsFragment.AddDetailsFragment"
+        android:label="AddPlayersDetails"
+        tools:layout="@layout/fragment_add_details" >
+        <action
+            android:id="@+id/action_addDetailsFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/informaton2"
+        android:name="com.example.codelab_5_shubhendra.ui.Informaton"
+        android:label="Informaton" >
+        <action
+            android:id="@+id/action_informaton2_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+</navigation>
